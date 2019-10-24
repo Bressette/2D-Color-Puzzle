@@ -1,7 +1,8 @@
 #pragma once
 
-const int sizeX = 10;
-const int sizeY = 10;
+#define sizeX 10
+#define sizeY 10
+
 void initBoard(float board[sizeY][sizeX][3], float color1[3], float color2[3], float color3[3], float color4[3]);
 void scrambleBoard(float board[sizeY][sizeX][3], int steps);
 void lerpColorF(float nextColor[3], float color1[3], float color2[3], int currentStep, int totalSteps);

@@ -8,6 +8,8 @@
 #include "Rendering.h"
 #include "game.h"
 
+
+
 void display();
 void keyboard(unsigned char key, int x, int y);
 void click(int button, int state, int x, int y);
