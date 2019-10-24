@@ -116,9 +116,6 @@ void keyboard(unsigned char key, int x, int y)
 		makeHorizontalMove(selectedY, 1, board);
 		selectedX++;
 		break;
-	case 'r':
-		createGame(board, boardSolved, color1, color2, color3, color4);
-		break;
 	default:
 		break;
 	}
@@ -189,13 +186,12 @@ int compareColors(float color1[3], float color2[3])
 
 void displayInstructions()
 {
-	printf("Hello, welcome to Color Puzzle. This is a 2D rubik's cube-esque puzzle game based on organizing colors.\n");
+	printf("Hello, welcome to Color Puzzle. This is a 2D puzzle game based on organizing colors.\n");
 	printf("After these instructions, you will be prompted to scramble the board.\n");
 	printf("The goal of the game is to unscramble the colors by organizing them into the correct location.\n");
 	printf("The controls are:\n");
 	printf("Click a colored tile to control it.\n");
 	printf("Use WASD to make it move up, left, down, and right\n");
-	printf("Press 'r' to restart with a new board.\n");
 	printf("The colors will wrap around to the other side of the board. However, the edge colors stay in place for reference.\n");
 	printf("The game will end when you completely organize all the colors.");
 	printf("The console will say when you have won.\n");
